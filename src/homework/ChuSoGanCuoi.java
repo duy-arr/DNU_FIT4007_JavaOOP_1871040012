@@ -6,11 +6,9 @@ public class ChuSoGanCuoi {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
-        // Nhập số nguyên N
         System.out.print("Nhập một số nguyên N (|N| > 9): ");
         int N = sc.nextInt();
 
-        // Đảm bảo N có ít nhất 2 chữ số
         if (Math.abs(N) > 9) {
             int N_abs = Math.abs(N); // lấy trị tuyệt đối
             int ganCuoi = (N_abs / 10) % 10; // lấy chữ số gần cuối
